@@ -6,9 +6,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 SAVED_MODELS_DIR = BASE_DIR / "saved_models"
 
-# Ensure directories exist
-DATA_DIR.mkdir(parents=True, exist_ok=True)
-SAVED_MODELS_DIR.mkdir(parents=True, exist_ok=True)
+# Ensure directories exist safely (accommodating read-only serverless filesystems)
+try:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    SAVED_MODELS_DIR.mkdir(parents=True, exist_ok=True)
+except OSError:
+    pass
 
 # Dataset paths
 SYNTHETIC_DATASET_PATH = DATA_DIR / "synthetic_infrastructure_telemetry.csv"
