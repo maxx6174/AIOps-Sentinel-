@@ -5,7 +5,12 @@
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI_0.115+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/Frontend-React_18_+_Vite-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn_1.5+-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live_Production-000000?logo=vercel&logoColor=white)](https://aiops-sentinel-roan.vercel.app)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-AIOps--Sentinel--181717?logo=github&logoColor=white)](https://github.com/maxx6174/AIOps-Sentinel-)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Live Production Frontend**: [https://aiops-sentinel-roan.vercel.app](https://aiops-sentinel-roan.vercel.app)  
+**Public GitHub Repository**: [https://github.com/maxx6174/AIOps-Sentinel-](https://github.com/maxx6174/AIOps-Sentinel-)
 
 ---
 
