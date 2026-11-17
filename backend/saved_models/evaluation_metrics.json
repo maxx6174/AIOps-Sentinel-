@@ -1,0 +1,97 @@
+{
+  "models": [
+    {
+      "model_name": "Random Forest Classifier",
+      "model_type": "Ensemble Supervised Classifier (Primary)",
+      "accuracy": 0.9887,
+      "precision": 0.9373,
+      "recall": 1.0,
+      "f1_score": 0.9676,
+      "roc_auc": 0.9952,
+      "confusion_matrix": [
+        [
+          1229,
+          17
+        ],
+        [
+          0,
+          254
+        ]
+      ],
+      "feature_importances": {
+        "cpu_utilization": 0.0948,
+        "memory_utilization": 0.0613,
+        "disk_utilization": 0.0033,
+        "network_latency": 0.4464,
+        "error_rate": 0.3942
+      }
+    },
+    {
+      "model_name": "Logistic Regression",
+      "model_type": "Linear Baseline Classifier",
+      "accuracy": 0.9873,
+      "precision": 0.9434,
+      "recall": 0.9843,
+      "f1_score": 0.9634,
+      "roc_auc": 0.9935,
+      "confusion_matrix": [
+        [
+          1231,
+          15
+        ],
+        [
+          4,
+          250
+        ]
+      ],
+      "feature_importances": {
+        "cpu_utilization": 0.1841,
+        "memory_utilization": 0.1662,
+        "disk_utilization": 0.0061,
+        "network_latency": 0.3337,
+        "error_rate": 0.3099
+      }
+    },
+    {
+      "model_name": "Isolation Forest",
+      "model_type": "Unsupervised Anomaly Detection",
+      "accuracy": 0.9567,
+      "precision": 0.8911,
+      "recall": 0.894,
+      "f1_score": 0.8926,
+      "roc_auc": 0.9876,
+      "confusion_matrix": [
+        [
+          1165,
+          33
+        ],
+        [
+          32,
+          270
+        ]
+      ],
+      "feature_importances": null
+    }
+  ],
+  "dataset_info": {
+    "total_samples": 6000,
+    "train_samples": 4500,
+    "test_samples": 1500,
+    "feature_count": 5,
+    "feature_names": [
+      "cpu_utilization",
+      "memory_utilization",
+      "disk_utilization",
+      "network_latency",
+      "error_rate"
+    ],
+    "failure_rate": 0.1692,
+    "dataset_type": "Synthetic Infrastructure Telemetry (Reproducible, Fixed Seed 42)"
+  },
+  "last_trained": "2026-11-17T22:50:53.835019",
+  "isolation_forest_summary": {
+    "n_estimators": 150,
+    "contamination": 0.2,
+    "anomaly_threshold": 0.4963
+  }
+}
